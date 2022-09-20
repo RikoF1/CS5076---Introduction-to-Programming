@@ -40,6 +40,9 @@ print(name + " you will be 100 years old in " + str(yearcalc))
 # exercise 4
 # printable = name + " you will be 100 years old in " + str(yearcalc) #debug only
 
+print((name + " you will be 100 years old in " + str(yearcalc) + '\n') * 5) # multiply
+
+# for loop 
 # for i in range(5):
 #    print(name + " you will be 100 years old in " + str(yearcalc))
 
@@ -47,4 +50,4 @@ print(name + " you will be 100 years old in " + str(yearcalc))
 repeatmanytimes = input("How many times you want it to repeat?") # change the order if necessary to have inputs before displaying anything
 
 for i in range(int(repeatmanytimes)):
-    print(name + " you will be 100 years old in " + str(yearcalc)) 
+    print(name + " you will be 100 years old in " + str(yearcalc))

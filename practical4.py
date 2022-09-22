@@ -31,8 +31,8 @@ day_input = int(input("Type the day: "))
 month_input = int(input("Type the month: "))
 year_input = int(input("Type the last two numbers of the year: "))
 
-def magic_date(year_input):
-    if (year_input == (day_input * month_input)):
+def magic_date(x):
+    if (x == (day_input * month_input)):
         print("This is a true magic date!")
     else:
         print("This is not a magic date.")
@@ -40,3 +40,39 @@ def magic_date(year_input):
 magic_date(year_input)
 
 # Exercise 4
+
+value1 = float(input("Input value 1 here: "))
+value2 = float(input("Input value 2 here: "))
+value3 = float(input("Input value 3 here: "))
+
+input_list = [value1, value2, value3]
+
+def median(lst):
+    lst.sort()
+    print(lst[1])
+
+median(input_list)
+
+# or
+
+# Exercise 4
+value1 = float(input("Input value 1 here: "))
+value2 = float(input("Input value 2 here: "))
+value3 = float(input("Input value 3 here: "))
+
+def median(a, b, c):
+    if ((a > b) and (b > c)) or ((c > b) and (a < b)):
+        print(b, "is the median value.")
+    elif ((b > a) and (a > c)) or ((c > a) and (a > b)):
+        print(a, "is the median value.")
+    else:
+        print(c, "is the median value.")
+
+median(value1, value2, value3)
+
+# a > b > c
+# a > c > b
+# b > a > c
+# b > c > a
+# c > a > b
+# c > b > a

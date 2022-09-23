@@ -86,7 +86,8 @@ def gcd(x,y):
             y = r
             r = x % y
             
-            print(y)
+            return y
+            # print(y)
         else:
             print("There is no remainder between these two numbers.")
     else:
@@ -94,7 +95,9 @@ def gcd(x,y):
 
 input_x = float(input("Input number 1 here: "))
 input_y = float(input("Input number 2 here: "))
-gcd(input_x,input_y)
+
+# gcd(input_x,input_y)
+print(gcd(input_x,input_y))
 
 # Exercise 6
 # given 3 sticks, if any of the three lengths is greater than the sum of the other two, then you cannot form a triangle.

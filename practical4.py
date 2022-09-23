@@ -55,7 +55,6 @@ median(input_list)
 
 # or
 
-# Exercise 4
 value1 = float(input("Input value 1 here: "))
 value2 = float(input("Input value 2 here: "))
 value3 = float(input("Input value 3 here: "))
@@ -76,3 +75,44 @@ median(value1, value2, value3)
 # b > c > a
 # c > a > b
 # c > b > a
+
+# Exercise 5
+
+def gcd(x,y):
+    if x > y:
+        r = (x % y)
+        if (r != 0):
+            x = y
+            y = r
+            r = x % y
+            
+            print(y)
+        else:
+            print("There is no remainder between these two numbers.")
+    else:
+        print("Euclides algorith only works when x > y !")
+
+input_x = float(input("Input number 1 here: "))
+input_y = float(input("Input number 2 here: "))
+gcd(input_x,input_y)
+
+# Exercise 6
+# given 3 sticks, if any of the three lengths is greater than the sum of the other two, then you cannot form a triangle.
+
+def is_triangle(a,b,c):
+    if (a+b) > c and (a+c) > b and (b+c) > a:
+        print("Can be a triangle.")
+    elif (a+b) == c or (a+c) == b or (b+c) == a:
+        print("A degenerate triangle is formed.")
+    else:
+        print("You cannot form a triangle.")
+
+value1_input = float(input("Input value 1 here: "))
+value2_input = float(input("Input value 2 here: "))
+value3_input = float(input("Input value 3 here: "))
+
+is_triangle(value1_input, value2_input, value3_input)
+
+# a + b > c
+# a + c > b
+# b + c > a

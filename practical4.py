@@ -1,4 +1,4 @@
-#Functions
+# Functions
 # Exercise 1
 def mysteryNumber(x):
     x=x*x

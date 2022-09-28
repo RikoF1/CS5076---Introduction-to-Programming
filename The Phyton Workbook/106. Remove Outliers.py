@@ -1,4 +1,3 @@
-## UNFINISHED
 """
 Write a function that takes a list of values and an non-negative integer, n, as its parameters.
 The function should return a copy of the list as the only result. The order of the elements does not have to match the order on the original
@@ -21,20 +20,22 @@ def new_list(lst, n): # n needs to be int positive
 """
 Main program
 """
+# global variables
 x = 2 # numbers to remove
-list = [] # starting list
-
+user_list = [] # starting list
+#user input values
 user_input = input("Input here data to add to a list: ")
 
-while len(list) < 4:
-    if user_input == "":
+while len(user_list) < 4:
+    if user_input != "":
+        user_list.extend(user_input)
+        user_input = input("Input here data to add to a list: ")
+    else:
         print("You must have at least 4 values in the list.")
         user_input = input("Input here data to add to a list: ")
-    
-while user_input != "":
-    list.extend(user_input)
-    user_input = input("Input here data to add to a list: ")
-
 else:
-        # print(list)
-    new_list(list, x) # show final function call
+    while user_input != "":
+        user_list.extend(user_input)
+        user_input = input("Input here data to add to a list: ")
+    else:
+        new_list(user_list,x)

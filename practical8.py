@@ -50,6 +50,6 @@ def searchBinary(lst):
 populateList(list)
 
 # sort the list
-print(sortList(list))
+sortList(list)
 
 print(searchBinary(list))
